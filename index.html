@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C#ShirT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+
+<nav>
+<div class="logo"><img class="ct" src="images/c-shirt main logo.jpg"></div>
+<div class="hac"><div class="home"><a href="/">Home</a></div> <button class="about">About</button> </div>
+<!-- <div class="search">
+    <input id="search-bar" type="search" placeholder="Search C#ShirT" >
+    <button class="cross" onclick="searchBar.value ='';">x</button>
+  <button class="srcBtn"><img src="images/SEARCHICON.jpg" alt=""></button>
+</div> -->
+
+<div class="cartsec">
+  <div class="cartlogSec">
+  
+    <button class="cart" onclick="SCart();"> <img class="cartimg" src="images/crt blue.jpg" alt=""> <b id="cartnote">0</b></button>
+   
+   </div>
+    <div class="carnot">
+      Cart is Full!
+    </div>
+</div>
+
+
+
+</nav>
+<div class="all">
+<div class="shirtB">
+</div>
+
+<div class="shorthands">
+  <div class="hand1"></div>
+<div class="hand2"></div>
+</div>
+<div class="longhands">
+  <div class="hand3"></div>
+<div class="hand4"></div>
+<div class="hand5"></div>
+<div class="hand6"></div>
+<div class="shape3"></div>
+<div class="shape4"></div>
+<div class="shape5"></div>
+<div class="shape6"></div>
+<div class="shape7"></div>
+<div class="shape8"></div>
+
+</div>
+<div class="shape9"  ></div>
+<div class="shape10" ></div>
+
+<div class="shape1"></div>
+<div class="shape2"></div>
+<div class="neck"></div>
+<div class="imgBody">
+  <img class="imgC" src="images/images (15) (5).jpeg" alt="">
+</div>
+<div class="slhbuttons" >
+  <button class="tshirtbtn" onclick="tfunc();">T-Shirt</button>
+  <button class="lsleevetbtn"  onclick=" lsfunc();" >Long Sleeve</button>
+  <button class="hoodiebtn" style="display: none;" onclick="tshirtbtn.style.border= 'none';lsleevetbtn.style.border= 'none';hoodiebtn.style.border= '2px solid navy';"> Hoodie</button>
+</div>
+
+<div class="details">
+  <div class="cap">Men's T-shirts(Select your Perfect Colour and Design)(200+ premium quality combinations)</div>
+  <div class="codesec">
+    <b class="cotext">#BL131</b>
+   <button class="copy" onclick="copy();"> <img src="images/copy.jpg" alt=""></button>
+  </div>
+  
+  
+  <div class="des">
+  <button class="description" onclick="Description();" style="color: green;" >Description   <img class="drodesicon" src="images/drop icon1.jpg" alt=""></button>
+
+  </div>
+  <div class="func">
+  <div class="mainpricesec">
+    <b class="priecebname">Price:</b> <b style="color:rgb(255, 0, 0); font-size: 47px; transition:all 1s;" class="priceb">399</b> <b style="color: navy; font-size: 37px; ">BDT</b>
+  
+  </div>
+  <div class="size">
+    <b >Size:</b>
+    <div class="sizeqb">
+      <button class="m" onclick="M.style.border = '2px solid navy';L.style.border = 'none'; XL.style.border = 'none'; XXL.style.border = 'none';  sizecode='M';if(handvar == 1){Code.innerText = '#' +'F'+ colorCode + desCode+ sizecode + qntcode;}else{Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode;};copyText.value = Code.innerText; ">M</button>
+      <button class="l" onclick="M.style.border = '2px';L.style.border = '2px solid navy'; XL.style.border = 'none'; XXL.style.border = 'none';  sizecode='L';if(handvar == 1){Code.innerText = '#' +'F'+ colorCode + desCode+ sizecode + qntcode;}else{Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode;};minSize1 = 'L';minSize2 = 'L';minSize3 = 'L';minSize4 = 'L';minSize5 = 'L';minSize6 = 'L'; minSize7 = 'L';minSize8 = 'L';minSize9 = 'L';minSize10 = 'L';  copyText.value = Code.innerText; ">L</button>
+      <button class="xl" onclick="M.style.border = '2px';L.style.border = 'none'; XL.style.border = '2px solid navy'; XXL.style.border = 'none';  sizecode='XL';if(handvar == 1){Code.innerText = '#' +'F'+ colorCode + desCode+ sizecode + qntcode;}else{Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode;};minSize1 = 'XL';minSize2 = 'XL';minSize3 = 'XL';minSize4 = 'XL';minSize5 = 'XL';minSize6 = 'XL'; minSize7 = 'XL';minSize8 = 'XL';minSize9 = 'XL';minSize10 = 'XL'; copyText.value = Code.innerText; ">XL</button>
+      <button class="xxl" onclick="M.style.border = '2px';L.style.border = 'none'; XL.style.border = 'none'; XXL.style.border = '2px solid navy'; sizecode='XXL';if(handvar == 1){Code.innerText = '#' +'F'+ colorCode + desCode+ sizecode + qntcode;}else{Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode;}; ;minSize1 = 'XXL';minSize2 = 'XXL';minSize3 = 'XXL';minSize4 = 'XXL';minSize5 = 'XXL';minSize6 = 'XXL'; minSize7 = 'XXL';minSize8 = 'XXL';minSize9 = 'XXL';minSize10 = 'XXL'; copyText.value = Code.innerText; " >XXL</button>
+    </div>
+  </div>
+  <div class="quantity">
+    <b  style="color: navy; font-size: 37px;">Quantity:</b>
+
+    <div class="quaninput">
+<button class="mainminus" style="font-size: 30px;" onclick="mainMinus();">-</button>
+      <input class="quaninp" type="number" value="1" onclick="if(quantinp.value <= 0){quantinp.value=0;}">
+      <button class="mainplus" style="font-size: 30px;" onclick="mainPlus();">+</button>
+    </div>
+
+  </div>
+
+</div>
+  
+  </div>
+  <div class="addbuy">
+    <button class="add"  onclick="  kkk = kkk+1; CartNote(); atC();">Add to Cart</button>
+    <button class="buy" onclick="buyBF();">Buy Now</button>
+  </div>
+
+<div class="a1">
+  <button class="solid" onclick="solid();" >SOLID</button>
+  <button class="ab" onclick="solidnum =0; ImgC.style.display = 'block';ImgC.src ='images/063b71979f6a36838c2528a5db87ebe7-4431c49ad8c537144bc0ee140a8a110c16693018405482.png' ; desCode = '12' ; if(handvar==1){Code.innerText = '#' + 'F'+ colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;}else{Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;} " ><img src="images/063b71979f6a36838c2528a5db87ebe7-4431c49ad8c537144bc0ee140a8a110c16693018405482.png" alt=""></button>
+  <button class="ac" onclick="solidnum =0; ImgC.style.display = 'block';ImgC.src ='images/images (15) (3).jpeg' ; desCode = '13' ; if(handvar==1){Code.innerText = '#' + 'F'+ colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;}else{Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;} "><img src="images/images (15) (3).jpeg" alt=""></button>
+  <button class="ab" onclick="solidnum =0;ImgC.style.display = 'block';ImgC.src ='images/d05359d18615041ae6c3993a4b111d3f.jpg' ; desCode = '14' ; if(handvar==1){Code.innerText = '#' + 'F'+ colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;}else{Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;} " ><img src="images/d05359d18615041ae6c3993a4b111d3f.jpg" alt=""></button>
+  <button class="aa" onclick="solidnum =0;ImgC.style.display = 'block';ImgC.src ='images/images (15) (7).jpeg' ; desCode = '15' ; if(handvar==1){Code.innerText = '#' + 'F'+ colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;}else{Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;} " ><img src="images/images (15) (7).jpeg" alt=""></button>
+  <button class="ab" onclick="solidnum =0; ImgC.style.display = 'block';ImgC.src ='images/raf,360x360,075,t,fafafa_ca443f4786.jpg' ; desCode = '16' ; if(handvar==1){Code.innerText = '#' + 'F'+ colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;}else{Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;} " ><img src="images/raf,360x360,075,t,fafafa_ca443f4786.jpg" alt=""></button>
+  <button class="ac" onclick="solidnum =0; ImgC.style.display = 'block';ImgC.src ='images/images (15) (4).jpeg' ; desCode = '17' ; if(handvar==1){Code.innerText = '#' + 'F'+ colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;}else{Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;} "><img src="images/images (15) (4).jpeg" alt=""></button>
+ <button class="ab" onclick="solidnum =0; ImgC.style.display = 'block';ImgC.src ='images/images 99.jpeg' ; desCode = '18' ; if(handvar==1){Code.innerText = '#' + 'F'+ colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;}else{Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;} " ><img src="images/images 99.jpeg" alt=""></button>
+  <button class="ac" onclick="solidnum =0; ImgC.style.display = 'block';ImgC.src ='images/images (15) (5).jpeg' ; desCode = '19' ; if(handvar==1){Code.innerText = '#' + 'F'+ colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;}else{Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;} "><img src="images/images (15) (5).jpeg" alt=""></button>
+  <button class="ac" onclick="solidnum =0; ImgC.style.display = 'block';ImgC.src ='images/midsld.jpg' ; desCode = '1T' ; if(handvar==1){Code.innerText = '#' + 'F'+ colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;}else{Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;} "><img src="images/midsld.jpg" alt=""></button>
+
+</div>
+  <div class="a2">
+  <button class="aa" onclick="solidnum =0; ImgC.style.display = 'block';ImgC.src ='images/vintage-gammal-tag-t-shirt-design-klistermaerke.jpg' ; desCode = '21' ; if(handvar==1){Code.innerText = '#' + 'F'+ colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;}else{Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;} " ><img src="images/vintage-gammal-tag-t-shirt-design-klistermaerke.jpg" alt=""></button>
+   <button class="aa" onclick="solidnum =0; ImgC.style.display = 'block'; ImgC.src ='images/images.png'; desCode = '22' ; if(handvar==1){Code.innerText = '#' + 'F'+ colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;}else{Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;}"><img src="images/images.png" alt=""></button>
+   <button class="ab" onclick="solidnum =0; ImgC.style.display = 'block';ImgC.src ='images/240_F_398219236_3fgvgb5LS4jDfkzajmeZXV828ipK07It.jpg' ;  desCode = '23' ; if(handvar==1){Code.innerText = '#' + 'F'+ colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;}else{Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;} "><img src="images/240_F_398219236_3fgvgb5LS4jDfkzajmeZXV828ipK07It.jpg" alt=""></button>
+   <button class="ac" onclick="solidnum =0; ImgC.style.display = 'block';ImgC.src ='images/Screenshot 2024-09-29 122837.jpg' ;  desCode = '24' ;if(handvar==1){Code.innerText = '#' + 'F'+ colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;}else{Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;} "><img src="images/Screenshot 2024-09-29 122837.jpg" alt=""></button>
+   <button class="aa" onclick="solidnum =0; ImgC.style.display = 'block';ImgC.src ='images/d1.jpg' ;  desCode = '25' ; if(handvar==1){Code.innerText = '#' + 'F'+ colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;}else{Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;} "><img src="images/d1.jpg" alt=""></button>
+   <button class="ab" onclick="solidnum =0; ImgC.style.display = 'block';ImgC.src ='images/futfute sundor 1.png' ;  desCode = '26' ; if(handvar==1){Code.innerText = '#' + 'F'+ colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;}else{Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;} "><img src="images/futfute sundor 1.png" alt=""></button>
+   <button class="ac" onclick="solidnum =0; ImgC.style.display = 'block';ImgC.src ='images/quote-simple-motivational-minimalism-wallpaper-preview.jpg' ;  desCode = '27' ; if(handvar==1){Code.innerText = '#' + 'F'+ colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;}else{Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;} "><img src="images/quote-simple-motivational-minimalism-wallpaper-preview.jpg" alt=""></button>
+   <button class="ab" onclick="solidnum =0; ImgC.style.display = 'block';ImgC.src ='images/Screenshot_20231105-141118_WhatsApp.png' ;  desCode = '28' ; if(handvar==1){Code.innerText = '#' + 'F'+ colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;}else{Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;} " ><img src="images/Screenshot_20231105-141118_WhatsApp.png" alt=""></button>
+   <button class="ac" onclick="solidnum =0; ImgC.style.display = 'block';ImgC.src ='images/Idiots (2).jpg' ;  desCode = '29' ; if(handvar==1){Code.innerText = '#' + 'F'+ colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;}else{Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;} "><img src="images/Idiots (2).jpg" alt=""></button>
+   <button class="ac" onclick="solidnum =0; ImgC.style.display = 'block';ImgC.src ='images/positive.jpg' ; desCode = '2T' ; if(handvar==1){Code.innerText = '#' + 'F'+ colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;}else{Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;} "><img src="images/positive.jpg" alt=""></button>
+  </div>
+  <div class="a3">
+    
+    <button class="aa" onclick="solidnum =0; ImgC.style.display = 'block';ImgC.src ='images/panda.png' ;  desCode = '31' ; if(handvar==1){Code.innerText = '#' + 'F'+ colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;}else{Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;} " ><img src="images/panda.png" alt=""></button>
+    <button class="ab" onclick="solidnum =0; ImgC.style.display = 'block';ImgC.src ='images/boxdes.jpg' ;  desCode = '32' ; if(handvar==1){Code.innerText = '#' + 'F'+ colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;}else{Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;} " ><img src="images/boxdes.jpg" alt=""></button>
+    <button class="aa" onclick="solidnum =0; ImgC.style.display = 'block';ImgC.src ='images/622w-G81KRzbxiMQ.webp' ;  desCode = '33' ; if(handvar==1){Code.innerText = '#' + 'F'+ colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;}else{Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;} " ><img src="images/622w-G81KRzbxiMQ.webp" alt=""></button>
+    <button class="ab" onclick="solidnum =0; ImgC.style.display = 'block';ImgC.src ='images/622w-NYFOLSLrtgA.webp' ;  desCode = '34' ; if(handvar==1){Code.innerText = '#' + 'F'+ colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;}else{Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;} " ><img src="images/622w-NYFOLSLrtgA.webp" alt=""></button>
+    <button class="aa" onclick="solidnum =0; ImgC.style.display = 'block';ImgC.src ='images/622w-cOLS_Ee0Kys.webp' ;  desCode = '35' ; if(handvar==1){Code.innerText = '#' + 'F'+ colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;}else{Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;} " ><img src="images/622w-cOLS_Ee0Kys.webp" alt=""></button>
+    <button class="ab" onclick="solidnum =0; ImgC.style.display = 'block';ImgC.src ='images/622w-1JBxZB8qi08.webp' ;  desCode = '36' ; if(handvar==1){Code.innerText = '#' + 'F'+ colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;}else{Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;} " ><img src="images/622w-1JBxZB8qi08.webp" alt=""></button>
+    <button class="aa" onclick="solidnum =0; ImgC.style.display = 'block';ImgC.src ='images/622w-4D2XM3JcO9g.webp' ;  desCode = '37' ; if(handvar==1){Code.innerText = '#' + 'F'+ colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;}else{Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;} " ><img src="images/622w-4D2XM3JcO9g.webp" alt=""></button>
+    <button class="ab" onclick="solidnum =0; ImgC.style.display = 'block';ImgC.src ='images/622w-6JohNY5VlS8.webp' ;  desCode = '38' ; if(handvar==1){Code.innerText = '#' + 'F'+ colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;}else{Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;} " ><img src="images/622w-6JohNY5VlS8.webp" alt=""></button>
+    <button class="aa" onclick="solidnum =0; ImgC.style.display = 'block';ImgC.src ='images/622w-72m5xY1wleI.webp' ;  desCode = '39' ; if(handvar==1){Code.innerText = '#' + 'F'+ colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;}else{Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;} " ><img src="images/622w-72m5xY1wleI.webp" alt=""></button>
+    <button class="ab" onclick="solidnum =0; ImgC.style.display = 'block';ImgC.src ='images/622w-B7mrnTIE4l8.webp' ;  desCode = '3T' ; if(handvar==1){Code.innerText = '#' + 'F'+ colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;}else{Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText;} " ><img src="images/622w-B7mrnTIE4l8.webp" alt=""></button>
+  </div>
+  
+<div class="colors">
+  <button class="red" onclick="ReD();">RED</button>
+  <button class="green"  onclick="GrN();">GREEN</button>
+  <button class="navy"  onclick="BlU();">NAVY</button>
+  <button class="white"  onclick="WT();">WHITE</button>
+
+  <button class="black"  onclick="bLk();">BLACK</button>
+  <button class="brown"  onclick="bRn();">BROWN</button>
+  <button class="gray"  onclick="gRy();">GRAY</button>
+ 
+</div>
+
+<!-- added later, input style is in code section -->
+
+<input type="text" value="#BL131" id="inputcode">
+
+<div class="desbar">
+
+<button class="descross" onclick="desBar.style.display = 'none'; n = 0;">
+  x
+</button>
+</div>
+
+<div class="showcart">
+  <b style="color: rgb(255, 255, 255); font-size: 40px; position: absolute; margin-top: 5px; margin-left: 315px;">Cart</b>
+  <button class="showcartcross" onclick="showCart.style.display = 'none';m =0;">
+    x
+  </button>
+
+<div class="cartbody">
+  <div class="cartrightsec">
+<div class="myprod1sec">
+  <b style="color: navy;font-size: 28px; margin-left: 60px;">My products:</b>
+   <div class="prodincart">
+<div class="cartrightln1"><b style="margin-left: 15px;" class="cartrightl1p1"></b><b style="margin-left: 15px;"class="cartrightl1p2"></b></div>
+<div class="cartrightln2"><b style="margin-left: 15px;"class="cartrightl2p1"></b><b style="margin-left: 15px;"class="cartrightl2p2"></b></div>
+<div class="cartrightln3"><b style="margin-left: 15px;"class="cartrightl3p1"></b><b style="margin-left: 15px;"class="cartrightl3p2"></b></div>
+<div class="cartrightln4"><b style="margin-left: 15px;"class="cartrightl4p1"></b><b style="margin-left: 15px;"class="cartrightl4p2"></b></div>
+<div class="cartrightln5"><b style="margin-left: 15px;"class="cartrightl5p1"></b><b style="margin-left: 15px;"class="cartrightl5p2"></b></div>
+
+  </div>
+</div>
+
+<div class="cartrightsecq" >
+  <b>Quantity :</b><b><b style="color: rgb(0, 0, 255); " class="cartrightqnt"></b>pc</b>
+</div>
+<div class="cartrightsect" >
+  <b>Total :</b><b><b style="color: green;" class="cartrighttot"></b>BDT</b>
+</div>
+<div class="cartrightsecdc" >
+  <b>Delivery Charge :</b><b><b style="color: maroon;" class="cartrightdelc"></b>BDT</b>
+</div>
+<div class="cartrightsecnt" >
+  <b>NET Total :</b><b><b style="color: red;" class="cartrightntot"></b>BDT</b>
+</div>
+
+<div class="cartrightsidebuttsec">
+  <button style="border: none;color: rgb(255, 255, 255); background-color: navy;width: 100px;height: 50px;font-size: 22px;font-weight: bold;" onclick="buynowright();" >Buy Now</button>
+</div>
+<input type="text" class="teminputfr1" style="display: none;">
+<input type="text" class="teminputfr2" style="display: none;" >
+<input type="text" class="teminputfr3" style="display: none;" >
+<input type="text" class="teminputfr4" style="display: none;" >
+<input type="text" class="teminputfr5" style="display: none;" >
+<input type="text" class="teminputfr6" style="display: none;" >
+<input type="text" class="teminputfr7" style="display: none;">
+<input type="text" class="teminputfr8" style="display: none;">
+<input type="text" class="teminputfr9" style="display: none;">
+<input type="text" class="teminputfr10" style="display: none;">
+<input type="text" class="teminputfrtotalq" style="display: none;">
+
+  </div>
+  <div class="cp10">
+    <div class="minshirtB0">
+    </div>
+    
+    <div class="minhand10"></div>
+    <div class="minhand20"></div>
+    <div class="minhand30"></div>
+    <div class="minhand40"></div>
+    <div class="minneck0"></div>
+    <div class="minshape10"></div>
+    <div class="minshape20"></div>
+
+    <div class="minimgBody0">
+      <img class="minimgC0" src="images/images (15) (5).jpeg" alt="">
+      <div class="coverforsolid10" ></div>
+    </div>
+    <div class="cardes10">
+
+      <b style="color: navy;">Price: </b><b style="color:red;" class="minpriece10"> 399 </b><b style="color: navy;"> BDT</b> 
+      <div class="minsizesec10"><b style="color: navy; font-size: 19px;">Size:</b>
+        <button class="mm10" onclick="mM10.style.border='2px solid navy'; mL10.style.border='none';mXL10.style.border='none';mXXL10.style.border='none';minSize10 ='M';mtemcode10 ='#'+ minfnode10 + minSize10;minCode10.innerText = mtemcode10 + desMINquanIN10.value;">M</button> 
+        <button class="ml10" onclick="mM10.style.border='none'; mL10.style.border='2px solid navy';mXL10.style.border='none';mXXL10.style.border='none';minSize10 = 'L';mtemcode10 = '#'+ minfnode10 + minSize10;minCode10.innerText = mtemcode10 + desMINquanIN10.value;">L</button> 
+        <button class="mxl10" onclick="mM10.style.border='none'; mL10.style.border='none';mXL10.style.border='2px solid navy';mXXL10.style.border='none';minSize10 = 'XL';mtemcode10 = '#'+ minfnode10 + minSize10;minCode10.innerText = mtemcode10 + desMINquanIN10.value;">XL</button> 
+        <button class="mxxl10" onclick="mM10.style.border='none'; mL10.style.border='none';mXL10.style.border='none';mXXL10.style.border='2px solid navy';minSize10 = 'XXL';mtemcode10 = '#'+ minfnode10 + minSize10;minCode10.innerText = mtemcode10 + desMINquanIN10.value;">XXL</button> 
+     
+      </div>
+      <div class="desminquan10"><b style="color: navy; font-size: 19px;">Quantity:</b> <button class="minminus10" onclick="mincartminus10();">-</button><input type="number" value="1" class="desminquanin10" onclick="Msub10.style.display = 'block';"><button class="msub10" onclick="Msub10.style.display = 'none';mtemcode10 ='#'+ minfnode10 + minSize10;minCode10.innerText = mtemcode10 + desMINquanIN10.value;Tpm10.textContent = eval( 399 * desMINquanIN10.value);">Submit</button><button class="minplus10" onclick="mincartplus10();">+</button></div>
+      <b style="color: navy; font-size: 21px;">Total:</b><b style="color:red;font-size: 20px;" class="tpm10"> 399 </b><b style="color: navy;"> BDT</b>
+     </div>
+    
+
+    <button class="cp10cross" onclick="Cp10.style.display = 'none'; c=c-1; jjj = 10;cartNote.innerText = c ;cartrightl5p2.innerText = ''; crossminC(); crosscartrightcon10();">x</button>
+    <div class="mincode10"></div>
+<div class="cartchekdiv1">
+  <input type="checkbox" class="cartcheckbox10" style="width: 30px;height: 30px;" onclick="cartToright10();" >
+  <b style="color: navy;font-size: 21px;margin-left: 10px;"> select </b>
+</div>
+
+  </div>
+  <div class="cp9">
+    <div class="minshirtB9">
+    </div>
+    
+    <div class="minhand19"></div>
+    <div class="minhand29"></div>
+    <div class="minhand39"></div>
+    <div class="minhand49"></div>
+    <div class="minneck9"></div>
+    <div class="minshape19"></div>
+    <div class="minshape29"></div>
+    <div class="minimgBody9">
+      <img class="minimgC9" src="images/images (15) (5).jpeg" alt="">
+    </div>
+    <div class="coverforsolid9" ></div>
+   <div class="cardes9">
+    
+    <b style="color: navy;">Price: </b><b style="color:red;" class="minpriece9">399</b><b style="color: navy;"> BDT</b>
+    <div class="minsizesec9"><b style="color: navy; font-size: 19px;">Size:</b>
+      <button class="mm9" onclick="mM9.style.border='2px solid navy'; mL9.style.border='none';mXL9.style.border='none';mXXL9.style.border='none';minSize9 = 'M';mtemcode9 = '#'+ minfnode9 + minSize9;minCode9.innerText = mtemcode9 + desMINquanIN9.value;">M</button> 
+      <button class="ml9" onclick="mM9.style.border='none'; mL9.style.border='2px solid navy';mXL9.style.border='none';mXXL9.style.border='none';minSize9 = 'L';mtemcode9 = '#'+ minfnode9 + minSize9;minCode9.innerText = mtemcode9 + desMINquanIN9.value;">L</button> 
+      <button class="mxl9" onclick="mM9.style.border='none'; mL9.style.border='none';mXL9.style.border='2px solid navy';mXXL9.style.border='none';minSize9 = 'XL';mtemcode9 = '#'+ minfnode9 + minSize9;minCode9.innerText = mtemcode9 + desMINquanIN9.value;">XL</button> 
+      <button class="mxxl9" onclick="mM9.style.border='none'; mL9.style.border='none';mXL9.style.border='none';mXXL9.style.border='2px solid navy';minSize9 = 'XXL';mtemcode9 = '#'+ minfnode9 + minSize9;minCode9.innerText = mtemcode9 + desMINquanIN9.value;">XXL</button> 
+   
+    </div>
+    <div class="desminquan9"><b style="color: navy; font-size: 19px;">Quantity:</b><button class="minminus9" onclick="mincartminus9();">-</button> <input type="number" value="1" class="desminquanin9"  onclick="Msub9.style.display = 'block';"><button class="msub9" onclick="Msub9.style.display = 'none'; mtemcode9 ='#'+ minfnode9 + minSize9;minCode9.innerText = mtemcode9 + desMINquanIN9.value; Tpm9.textContent = eval( 399 * desMINquanIN9.value);">Submit</button><button class="minplus9"onclick="mincartplus9();">+</button></div>
+    <b style="color: navy; font-size: 21px;">Total:</b><b class='tpm9' style="color:red;font-size: 20px;"> 399 </b><b style="color: navy;"> BDT</b>
+
+    </b>
+   </div>
+
+
+    <button class="cp9cross" onclick="Cp9.style.display = 'none'; c=c-1; iii = 9;cartNote.innerText = c ;  cartrightl5p1.innerText = ''; crossminC();crosscartrightcon9(); ">x</button>
+    <div class="mincode9"></div>
+    <div class="cartchekdiv1">
+      <input type="checkbox" class="cartcheckbox9" style="width: 30px;height: 30px;"onclick="cartToright9();">
+      <b style="color: navy;font-size: 21px;margin-left: 10px;">select </b>
+    </div>
+    
+  </div>
+  <div class="cp8">
+    <div class="minshirtB8">
+    </div>
+    
+    <div class="minhand18"></div>
+    <div class="minhand28"></div>
+    <div class="minhand38"></div>
+    <div class="minhand48"></div>
+    <div class="minneck8"></div>
+    <div class="minshape18"></div>
+    <div class="minshape28"></div>
+    <div class="minimgBody8">
+      <img class="minimgC8" src="images/images (15) (5).jpeg" alt="">
+    </div>
+    <div class="coverforsolid8" ></div>
+    <div class="cardes8">
+     
+      <b style="color: navy;">Price: </b><b style="color:red;" class="minpriece8"> 399 </b><b style="color: navy;"> BDT</b> 
+      <div class="minsizesec8"><b style="color: navy; font-size: 19px;">Size:</b>
+        <button class="mm8" onclick="mM8.style.border='2px solid navy'; mL8.style.border='none';mXL8.style.border='none';mXXL8.style.border='none';minSize8 = 'M';mtemcode8 = '#'+ minfnode8 + minSize8;minCode8.innerText = mtemcode8 + desMINquanIN8.value;">M</button> 
+        <button class="ml8" onclick="mM8.style.border='none'; mL8.style.border='2px solid navy';mXL8.style.border='none';mXXL8.style.border='none';minSize8 = 'L';mtemcode8 = '#'+ minfnode8 + minSize8;minCode8.innerText = mtemcode8 + desMINquanIN8.value;">L</button> 
+        <button class="mxl8" onclick="mM8.style.border='none'; mL8.style.border='none';mXL8.style.border='2px solid navy';mXXL8.style.border='none';minSize8 = 'XL';mtemcode8 = '#'+ minfnode8 + minSize8;minCode8.innerText = mtemcode8 + desMINquanIN8.value;">XL</button> 
+        <button class="mxxl8" onclick="mM8.style.border='none'; mL8.style.border='none';mXL8.style.border='none';mXXL8.style.border='2px solid navy';minSize8 = 'XXL';mtemcode8 = '#'+ minfnode8 + minSize8;minCode8.innerText = mtemcode8 + desMINquanIN8.value;">XXL</button> 
+      
+      </div>
+      <div class="desminquan8"><b style="color: navy; font-size: 19px;">Quantity:</b> <button class="minminus8" onclick="mincartminus8();">-</button><input type="number" value="1" class="desminquanin8"  onclick="Msub8.style.display = 'block';"> <button class="msub8" onclick="Msub8.style.display = 'none'; mtemcode8 ='#'+ minfnode8 + minSize8;minCode8.innerText = mtemcode8 + desMINquanIN8.value;Tpm8.textContent = eval( 399 * desMINquanIN8.value);">Submit</button><button class="minplus8" onclick="mincartplus8();">+</button></div>
+      <b style="color: navy; font-size: 21px;">Total:</b><b class='tpm8' style="color:red;font-size: 20px;"> 399 </b><b style="color: navy;"> BDT</b>
+  
+      </b>
+     </div>
+
+    <button class="cp8cross" onclick="Cp8.style.display = 'none'; c=c-1; hhh = 8; cartNote.innerText = c ; cartrightl4p2.innerText = ''; crossminC(); crosscartrightcon8();">x</button>
+    <div class="mincode8"></div>
+    <div class="cartchekdiv1">
+      <input type="checkbox" class="cartcheckbox8" style="width: 30px;height: 30px;"onclick="cartToright8();">
+      <b style="color: navy;font-size: 21px;margin-left: 10px;">select </b>
+    </div>
+    
+  </div>
+
+  <div class="cp7">
+    <div class="minshirtB7">
+    </div>
+    
+    <div class="minhand17"></div>
+    <div class="minhand27"></div>
+    <div class="minhand37"></div>
+    <div class="minhand47"></div>
+    <div class="minneck7"></div>
+    <div class="minshape17"></div>
+    <div class="minshape27"></div>
+    <div class="minimgBody7">
+      <img class="minimgC7" src="images/images (15) (5).jpeg" alt="">
+    </div>
+    <div class="coverforsolid7" ></div>
+    <div class="cardes7">
+    
+      <b style="color: navy;">Price: </b><b style="color:red;" class="minpriece7"> 399 </b><b style="color: navy;"> BDT</b> 
+      <div class="minsizesec7"><b style="color: navy; font-size: 19px;">Size:</b>
+        <button class="mm7" onclick="mM7.style.border='2px solid navy'; mL7.style.border='none';mXL7.style.border='none';mXXL7.style.border='none';minSize7 = 'M';mtemcode7 = '#'+ minfnode7 + minSize7;minCode7.innerText = mtemcode7 + desMINquanIN7.value;;">M</button> 
+        <button class="ml7" onclick="mM7.style.border='none'; mL7.style.border='2px solid navy';mXL7.style.border='none';mXXL7.style.border='none';minSize7 = 'L';mtemcode7 = '#'+ minfnode7 + minSize7;minCode7.innerText = mtemcode7 + desMINquanIN7.value;;">L</button> 
+        <button class="mxl7" onclick="mM7.style.border='none'; mL7.style.border='none';mXL7.style.border='2px solid navy';mXXL7.style.border='none';minSize7 = 'XL';mtemcode7 = '#'+ minfnode7 + minSize7;minCode7.innerText = mtemcode7 + desMINquanIN7.value;;">XL</button> 
+        <button class="mxxl7" onclick="mM7.style.border='none'; mL7.style.border='none';mXL7.style.border='none';mXXL7.style.border='2px solid navy';minSize7 = 'XXL';mtemcode7 = '#'+ minfnode7 + minSize7;minCode7.innerText = mtemcode7 + desMINquanIN7.value;;">XXL</button> 
+      </div>
+      <div class="desminquan7"><b style="color: navy; font-size: 19px;">Quantity:</b> <button class="minminus7" onclick="mincartminus7();">-</button><input type="number" value="1" class="desminquanin7"  onclick="Msub7.style.display = 'block';"><button class="msub7" onclick="Msub7.style.display = 'none'; mtemcode7 ='#'+ minfnode7 + minSize7;minCode7.innerText = mtemcode7 + desMINquanIN7.value; Tpm7.textContent = eval( 399 * desMINquanIN7.value);">Submit</button><button class="minplus7" onclick="mincartplus7();">+</button></div>
+      <b style="color: navy; font-size: 21px;">Total:</b><b class='tpm7' style="color:red;font-size: 20px;"> 399 </b><b style="color: navy;"> BDT </b>
+     </div>
+    <button class="cp7cross" onclick="Cp7.style.display = 'none'; c=c-1; ggg = 7;cartNote.innerText = c ;cartrightl4p1.innerText = '';  crossminC(); crosscartrightcon7();">x</button>
+    <div class="mincode7"></div>
+    <div class="cartchekdiv1">
+      <input type="checkbox" class="cartcheckbox7" style="width: 30px;height: 30px;"onclick="cartToright7();">
+      <b style="color: navy;font-size: 21px;margin-left: 10px;">select </b>
+    </div>
+    
+  </div>
+  <div class="cp6">
+    <div class="minshirtB6">
+    </div>
+    
+    <div class="minhand16"></div>
+    <div class="minhand26"></div>
+    <div class="minhand36"></div>
+    <div class="minhand46"></div>
+    <div class="minneck6"></div>
+    <div class="minshape16"></div>
+    <div class="minshape26"></div>
+    <div class="minimgBody6">
+      <img class="minimgC6" src="images/images (15) (5).jpeg" alt="">
+    </div>
+    <div class="coverforsolid6" ></div>
+    <div class="cardes6">
+  
+      <b style="color: navy;">Price: </b><b style="color:red;" class="minpriece6"> 399 </b><b style="color: navy;"> BDT</b> 
+      <div class="minsizesec6"><b style="color: navy; font-size: 19px;">Size:</b>
+        <button class="mm6" onclick="mM6.style.border='2px solid navy'; mL6.style.border='none';mXL6.style.border='none';mXXL6.style.border='none';minSize6 = 'M';mtemcode6 = '#'+ minfnode6 + minSize6;minCode6.innerText = mtemcode6 + desMINquanIN6.value;">M</button> 
+        <button class="ml6" onclick="mM6.style.border='none'; mL6.style.border='2px solid navy';mXL6.style.border='none';mXXL6.style.border='none';minSize6 = 'L';mtemcode6 = '#'+ minfnode6 + minSize6;minCode6.innerText = mtemcode6 + desMINquanIN6.value;">L</button> 
+        <button class="mxl6"onclick="mM6.style.border='none'; mL6.style.border='none';mXL6.style.border='2px solid navy';mXXL6.style.border='none';minSize6 = 'XL';mtemcode6 = '#'+ minfnode6 + minSize6;minCode6.innerText = mtemcode6 + desMINquanIN6.value;" >XL</button> 
+        <button class="mxxl6" onclick="mM6.style.border='none'; mL6.style.border='none';mXL6.style.border='none';mXXL6.style.border='2px solid navy';minSize6 = 'XXL';mtemcode6 = '#'+ minfnode6 + minSize6;minCode6.innerText = mtemcode6 + desMINquanIN6.value;">XXL</button> 
+      </div>
+      <div class="desminquan6"><b style="color: navy; font-size: 19px;">Quantity:</b> <button class="minminus6"onclick="mincartminus6();" >-</button><input type="number" value="1" class="desminquanin6"  onclick="Msub6.style.display = 'block';"><button class="msub6" onclick="Msub6.style.display = 'none'; mtemcode6 ='#'+ minfnode6 + minSize6;minCode6.innerText = mtemcode6 + desMINquanIN6.value; Tpm6.textContent = eval( 399 * desMINquanIN6.value);">Submit</button><button class="minplus6" onclick="mincartplus6();">+</button></div>
+      <b style="color: navy; font-size: 21px;">Total:</b><b class='tpm6' style="color:red;font-size: 20px;"> 399 </b><b style="color: navy;"> BDT</b>
+     </div>
+    <button class="cp6cross" onclick="Cp6.style.display = 'none'; c=c-1; fff = 6;cartNote.innerText = c ; cartrightl3p2.innerText = ''; crossminC();crosscartrightcon6(); ">x</button>
+    <div class="mincode6"></div>
+    <div class="cartchekdiv1">
+      <input type="checkbox" class="cartcheckbox6" style="width: 30px;height: 30px;"onclick="cartToright6();" >
+      <b style="color: navy;font-size: 21px;margin-left: 10px;">select </b>
+    </div>
+    
+  </div>
+  <div class="cp5">
+    <div class="minshirtB5">
+    </div>
+    
+    <div class="minhand15"></div>
+    <div class="minhand25"></div>
+    <div class="minhand35"></div>
+    <div class="minhand45"></div>
+    <div class="minneck5"></div>
+    <div class="minshape15"></div>
+    <div class="minshape25"></div>
+    <div class="minimgBody5">
+      <img class="minimgC5" src="images/images (15) (5).jpeg" alt="">
+    </div>
+    <div class="coverforsolid5" ></div>
+    <div class="cardes5">
+      <b style="color: navy;">Price: </b><b style="color:red;" class="minpriece5"> 399 </b><b style="color: navy;"> BDT</b> 
+      <div class="minsizesec5"><b style="color: navy; font-size: 19px;">Size:</b>
+        <button class="mm5" onclick="mM5.style.border='2px solid navy'; mL5.style.border='none';mXL5.style.border='none';mXXL5.style.border='none';minSize5 = 'M';mtemcode5 = '#'+ minfnode5 + minSize5;minCode5.innerText = mtemcode5 + desMINquanIN5.value;">M</button> 
+        <button class="ml5" onclick="mM5.style.border='none'; mL5.style.border='2px solid navy';mXL5.style.border='none';mXXL5.style.border='none';minSize5 = 'L';mtemcode5 = '#'+ minfnode5 + minSize5;minCode5.innerText = mtemcode5 + desMINquanIN5.value;">L</button> 
+        <button class="mxl5" onclick="mM5.style.border='none'; mL5.style.border='none';mXL5.style.border='2px solid navy';mXXL5.style.border='none';minSize5 = 'XL';mtemcode5 = '#'+ minfnode5 + minSize5;minCode5.innerText = mtemcode5 + desMINquanIN5.value;">XL</button> 
+        <button class="mxxl5" onclick="mM5.style.border='none'; mL5.style.border='none';mXL5.style.border='none';mXXL5.style.border='2px solid navy';minSize5 = 'XXL';mtemcode5 = '#'+ minfnode5 + minSize5;minCode5.innerText = mtemcode5 + desMINquanIN5.value;">XXL</button> 
+      </div>
+      <div class="desminquan5"><b style="color: navy; font-size: 19px;">Quantity:</b><button class="minminus5"onclick="mincartminus5();" >-</button> <input type="number" value="1" class="desminquanin5"  onclick="Msub5.style.display = 'block';"><button class="msub5" onclick="Msub5.style.display = 'none'; mtemcode5 ='#'+ minfnode5 + minSize5;minCode5.innerText = mtemcode5 + desMINquanIN5.value; Tpm5.textContent = eval( 399 * desMINquanIN5.value);">Submit</button><button class="minplus5" onclick="mincartplus5();">+</button></div>
+      <b style="color: navy; font-size: 21px;">Total:</b><b class='tpm5' style="color:red;font-size: 20px;"> 399 </b><b style="color: navy;"> BDT</b>
+  
+      </b>
+     </div>
+    <button class="cp5cross" onclick="Cp5.style.display = 'none' ;c=c-1; eee = 5;cartNote.innerText = c ;cartrightl3p1.innerText = '';  crossminC();crosscartrightcon5(); ">x</button>
+    <div class="mincode5"></div>
+    <div class="cartchekdiv1">
+      <input type="checkbox" class="cartcheckbox5" style="width: 30px;height: 30px;"onclick="cartToright5();" >
+      <b style="color: navy;font-size: 21px;margin-left: 10px;">select </b>
+    </div>
+    
+  </div>
+
+  <div class="cp4">
+    <div class="minshirtB4">
+    </div>
+    
+    <div class="minhand14"></div>
+    <div class="minhand24"></div>
+    <div class="minhand34"></div>
+    <div class="minhand44"></div>
+    <div class="minneck4"></div>
+    <div class="minshape14"></div>
+    <div class="minshape24"></div>
+    <div class="minimgBody4">
+      <img class="minimgC4" src="images/images (15) (5).jpeg" alt="">
+    </div>
+    <div class="coverforsolid4" ></div>
+    <div class="cardes4">
+      <b style="color: navy;">Price: </b><b style="color:red;" class="minpriece4"> 399 </b><b style="color: navy;"> BDT</b> 
+      <div class="minsizesec4"><b style="color: navy; font-size: 19px;">Size:</b>
+        <button class="mm4" onclick="mM4.style.border='2px solid navy'; mL4.style.border='none';mXL4.style.border='none';mXXL4.style.border='none';minSize4 = 'M';mtemcode4 = '#'+ minfnode4 + minSize4;minCode4.innerText = mtemcode4 + desMINquanIN4.value;">M</button> 
+        <button class="ml4" onclick="mM4.style.border='none'; mL4.style.border='2px solid navy';mXL4.style.border='none';mXXL4.style.border='none';minSize4 = 'L';mtemcode4 = '#'+ minfnode4 + minSize4;minCode4.innerText = mtemcode4 + desMINquanIN4.value;">L</button> 
+        <button class="mxl4" onclick="mM4.style.border='none'; mL4.style.border='none';mXL4.style.border='2px solid navy';mXXL4.style.border='none';minSize4 = 'XL';mtemcode4 = '#'+ minfnode4 + minSize4;minCode4.innerText = mtemcode4 + desMINquanIN4.value;">XL</button> 
+        <button class="mxxl4" onclick="mM4.style.border='none'; mL4.style.border='none';mXL4.style.border='none';mXXL4.style.border='2px solid navy';minSize4 = 'XXL';mtemcode4 = '#'+ minfnode4 + minSize4;minCode4.innerText = mtemcode4 + desMINquanIN4.value;">XXL</button> 
+      </div>
+      <div class="desminquan4"><b style="color: navy; font-size: 19px;">Quantity:</b><button class="minminus4"onclick="mincartminus4();" >-</button> <input type="number" value="1" class="desminquanin4"  onclick="Msub4.style.display = 'block';"><button class="msub4" onclick="Msub4.style.display = 'none'; mtemcode4 ='#'+ minfnode4 + minSize4;minCode4.innerText = mtemcode4 + desMINquanIN4.value; Tpm4.textContent = eval( 399 * desMINquanIN4.value);">Submit</button><button class="minplus4" onclick="mincartplus4();">+</button></div>
+      <b style="color: navy; font-size: 21px;">Total:</b><b class='tpm4' style="color:red;font-size: 20px;"> 399 </b><b style="color: navy;"> BDT</b>
+  
+      </b>
+     </div>
+    <button class="cp4cross" onclick="Cp4.style.display = 'none'; c=c-1; ddd = 4;cartNote.innerText = c ; cartrightl2p2.innerText = ''; crossminC();crosscartrightcon4(); ">x</button>
+    <div class="mincode4"></div>
+    <div class="cartchekdiv1">
+      <input type="checkbox" class="cartcheckbox4" style="width: 30px;height: 30px;"onclick="cartToright4();" >
+      <b style="color: navy;font-size: 21px;margin-left: 10px;">select </b>
+    </div>
+    
+  </div>
+  
+<div class="cp3">
+  <div class="minshirtB3">
+  </div>
+  
+  <div class="minhand13"></div>
+  <div class="minhand23"></div>
+  <div class="minhand33"></div>
+  <div class="minhand43"></div>
+  <div class="minneck3"></div>
+  <div class="minshape13"></div>
+  <div class="minshape23"></div>
+  <div class="minimgBody3">
+    <img class="minimgC3" src="images/images (15) (5).jpeg" alt="">
+  </div>
+  <div class="coverforsolid3" ></div>
+  <div class="cardes3">
+  
+    <b style="color: navy;">Price: </b><b style="color:red;" class="minpriece3"> 399 </b><b style="color: navy;"> BDT</b> 
+    <div class="minsizesec3"><b style="color: navy; font-size: 19px;">Size:</b>
+      <button class="mm3"onclick="mM3.style.border='2px solid navy'; mL3.style.border='none';mXL3.style.border='none';mXXL3.style.border='none';minSize3 = 'M';mtemcode3 = '#'+ minfnode3 + minSize3;minCode3.innerText = mtemcode3 + desMINquanIN3.value;">M</button> 
+      <button class="ml3" onclick="mM3.style.border='none'; mL3.style.border='2px solid navy';mXL3.style.border='none';mXXL3.style.border='none';minSize3 = 'L';mtemcode3 = '#'+ minfnode3 + minSize3;minCode3.innerText = mtemcode3 + desMINquanIN3.value;">L</button> 
+      <button class="mxl3" onclick="mM3.style.border='none'; mL3.style.border='none';mXL3.style.border='2px solid navy';mXXL3.style.border='none';minSize3 = 'XL';mtemcode3 = '#'+ minfnode3 + minSize3;minCode3.innerText = mtemcode3 + desMINquanIN3.value;">XL</button> 
+      <button class="mxxl3" onclick="mM3.style.border='none'; mL3.style.border='none';mXL3.style.border='none';mXXL3.style.border='2px solid navy';minSize3  = 'XXL';mtemcode3 = '#'+ minfnode3 + minSize3;minCode3.innerText = mtemcode3 + desMINquanIN3.value;">XXL</button> 
+    </div>
+    <div class="desminquan3"><b style="color: navy; font-size: 19px;">Quantity:</b> <button class="minminus3"onclick="mincartminus3();" >-</button><input type="number" value="1" class="desminquanin3"  onclick="Msub3.style.display = 'block';"><button class="msub3" onclick="Msub3.style.display = 'none'; mtemcode3 ='#'+ minfnode3 + minSize3;minCode3.innerText = mtemcode3 + desMINquanIN3.value; Tpm3.textContent = eval( 399 * desMINquanIN3.value);">Submit</button><button class="minplus3"onclick="mincartplus3();" >+</button></div>
+    <b style="color: navy; font-size: 21px;">Total:</b><b class='tpm3' style="color:red;font-size: 20px;"> 399 </b><b style="color: navy;"> BDT</b>
+
+    </b>
+   </div>
+  <button class="cp3cross" onclick="Cp3.style.display = 'none'; c=c-1; ccc = 3;cartNote.innerText = c ;cartrightl2p1.innerText = '';  crossminC();crosscartrightcon3(); ">x</button>
+  
+  <div class="mincode3"></div>
+  <div class="cartchekdiv1">
+    <input type="checkbox" class="cartcheckbox3" style="width: 30px;height: 30px;"onclick="cartToright3();" >
+    <b style="color: navy;font-size: 21px;margin-left: 10px;">select </b>
+  </div>
+  
+</div>
+
+
+<div class="cp2">
+  <div class="minshirtB2">
+  </div>
+  
+  <div class="minhand12"></div>
+  <div class="minhand22"></div>
+  <div class="minhand32"></div>
+  <div class="minhand42"></div>
+  <div class="minneck2"></div>
+  <div class="minshape12"></div>
+  <div class="minshape22"></div>
+  <div class="minimgBody2">
+    <img class="minimgC2" src="images/images (15) (5).jpeg" alt="">
+  </div>
+  <div class="coverforsolid2" ></div>
+  <div class="cardes2">
+     <b style="color: navy;">Price: </b><b style="color:red;" class="minpriece2"> 399 </b><b style="color: navy;"> BDT</b> 
+    <div class="minsizesec2"><b style="color: navy; font-size: 19px;">Size:</b>
+      <button class="mm2"onclick="mM2.style.border='2px solid navy'; mL2.style.border='none';mXL2.style.border='none';mXXL2.style.border='none';minSize2 = 'M';mtemcode2 = '#'+ minfnode2 + minSize2;minCode2.innerText = mtemcode2 + desMINquanIN2.value;">M</button> 
+      <button class="ml2" onclick="mM2.style.border='none'; mL2.style.border='2px solid navy';mXL2.style.border='none';mXXL2.style.border='none';minSize2 = 'L';mtemcode2 = '#'+ minfnode2 + minSize2;minCode2.innerText = mtemcode2 + desMINquanIN2.value;">L</button> 
+      <button class="mxl2" onclick="mM2.style.border='none'; mL2.style.border='none';mXL2.style.border='2px solid navy';mXXL2.style.border='none';minSize2 = 'XL';mtemcode2 = '#'+ minfnode2 + minSize2;minCode2.innerText = mtemcode2 + desMINquanIN2.value;">XL</button> 
+      <button class="mxxl2" onclick="mM2.style.border='none'; mL2.style.border='none';mXL2.style.border='none';mXXL2.style.border='2px solid navy';minSize2 = 'XXL';mtemcode2 = '#'+ minfnode2 + minSize2;minCode2.innerText = mtemcode2 + desMINquanIN2.value;">XXL</button> 
+    </div>
+    <div class="desminquan2"><b style="color: navy; font-size: 19px;">Quantity:</b> <button class="minminus2"  onclick="mincartminus2();">-</button> <input type="number" value="1" class="desminquanin2"  onclick="Msub2.style.display = 'block';"><button class="msub2"  onclick="Msub2.style.display = 'none'; mtemcode2 ='#'+ minfnode2 + minSize2;minCode2.innerText = mtemcode2 + desMINquanIN2.value;Tpm2.textContent = eval( 399 * desMINquanIN2.value);">Submit</button><button class="minplus2" onclick="mincartplus2();">+</button></div>
+    <b style="color: navy; font-size: 21px;">Total:</b><b class='tpm2' style="color:red;font-size: 20px;"> 399 </b><b style="color: navy;"> BDT</b>
+
+    </b>
+   </div>
+  <button class="cp2cross" onclick="Cp2.style.display = 'none'; c=c-1; bbb = 2;cartNote.innerText = c ; cartrightl1p2.innerText = ''; crossminC();crosscartrightcon2(); ">x</button>
+  <div class="mincode2"></div>
+  <div class="cartchekdiv1">
+    <input type="checkbox" class="cartcheckbox2" style="width: 30px;height: 30px;" onclick="cartToright2()">
+    <b style="color: navy;font-size: 21px;margin-left: 10px;">select </b>
+  </div>
+  
+</div>
+
+<div class="cp1">
+ 
+  <div class="minshirtB">
+  </div>
+  
+  <div class="minhand1"></div>
+  <div class="minhand2"></div>
+  <div class="minhand31"></div>
+  <div class="minhand41"></div>
+  <div class="minneck"></div>
+  <div class="minshape1"></div>
+  <div class="minshape2"></div>
+  <div class="minimgBody">
+    <img class="minimgC" src="images/images (15) (5).jpeg" alt="">
+  </div>
+
+  <div class="coverforsolid1" ></div>
+  
+  <div class="cardes1">
+  
+    <b  style="color: navy;">Price: </b><b style="color:red;" class="minpriece1" > 399 </b><b style="color: navy;"> BDT</b> 
+    <div class="minsizesec1"><b style="color: navy; font-size: 19px;">Size:</b>
+      <button class="mm1" onclick="mM1.style.border='2px solid navy'; mL1.style.border='none';mXL1.style.border='none';mXXL1.style.border='none'; minSize1 = 'M';mtemcode1 = '#'+ minfnode1 + minSize1;minCode1.innerText = mtemcode1 + desMINquanIN1.value;">M</button> 
+      <button class="ml1" onclick="mM1.style.border='none'; mL1.style.border='2px solid navy';mXL1.style.border='none';mXXL1.style.border='none';  minSize1 = 'L';mtemcode1 = '#'+ minfnode1 + minSize1;minCode1.innerText = mtemcode1 + desMINquanIN1.value;">L</button> 
+      <button class="mxl1"  onclick="mM1.style.border='none'; mL1.style.border='none';mXL1.style.border='2px solid navy';mXXL1.style.border='none';  minSize1 = 'XL';mtemcode1 = '#'+ minfnode1 + minSize1;minCode1.innerText = mtemcode1 + desMINquanIN1.value;  ">XL</button> 
+      <button class="mxxl1"  onclick="mM1.style.border='none'; mL1.style.border='none';mXL1.style.border='none';mXXL1.style.border='2px solid navy';  minSize1 = 'XXL';mtemcode1 = '#'+ minfnode1 + minSize1;minCode1.innerText = mtemcode1 + desMINquanIN1.value;  ">XXL</button> 
+    </div>
+    <div class="desminquan1"><b style="color: navy; font-size: 19px;">Quantity:</b> <button class="minminus1" onclick="mincartminus1()">-</button><input type="number" value="1" class="desminquanin1"  onclick="Msub1.style.display = 'block';"> <button class="msub1" onclick="Msub1.style.display = 'none'; mtemcode1 ='#'+ minfnode1 + minSize1;minCode1.innerText = mtemcode1 + desMINquanIN1.value; Tpm1.textContent = eval( 399 * desMINquanIN1.value);">Submit</button> <button class="minplus1" onclick="mincartplus1();">+</button></div>
+    <b style="color: navy; font-size: 21px;">Total:</b><b class='tpm1' style="color:red;font-size: 20px;"> 399 </b><b style="color: navy;"> BDT</b>
+   </div>
+  <button class="cp1cross" onclick="Cp1.style.display = 'none'; c=c-1; aaa = 1;cartNote.innerText = c ;cartrightl1p1.innerText = '';  crossminC();crosscartrightcon1(); ">x</button>
+  <div class="mincode1"></div>
+  <div class="cartchekdiv1">
+    <input type="checkbox" class="cartcheckbox1" style="width: 30px;height: 30px;"onclick="cartToright1();">
+    <b style="color: navy;font-size: 21px;margin-left: 10px;">select </b>
+  </div>
+  
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+<div class="buynowpopup">
+<div class="buynowcaption">
+  <b>Buy Now</b>
+  <button class="byncross" onclick="Buypopcross();">x</button>
+</div>
+<div class="yourps"><b>Your products :</b><div class="psall"></div></div>
+
+<div class="buynowpopshirtdis" style=" position: absolute; width: 160px;height: 155px; background-color: rgb(255, 255, 255); margin-top: 70px; margin-left: 40px;">
+
+  <div class="bnpopshirt">
+  </div>
+  
+  <div class="bnpophand1"></div>
+  <div class="bnpophand2"></div>
+  <div class="bnpopneck"></div>
+  <div class="bnpopshape1"></div>
+  <div class="bnpopshape2"></div>
+  <div class="bnpopshape3"></div>
+  <div class="bnpopshape4"></div>
+  <div class="bnpopimgbody">
+    
+    <img class="bnpopimg" src="images/images (15) (5).jpeg" alt="">
+   </div>
+   <div class="bnpopcover" style="display: none;"></div>
+
+</div>
+
+<div class="buynowquantity"><b>Quantity:</b> <b class="bynquanvalue" style="color: rgb(39, 184, 141);"></b><b style="margin-left: 360px; font-weight: bold;font-size: 27px;">Pcs</b></div>
+<div class="buynowtotal"><b>Total:</b> <b class="byntotalvalue" style="color: rgb(0, 166, 255);"></b><b class="byntotcur">BDT </b></div>
+
+<div class="buynowdc"><b style="color: navy;font-weight: bold;font-size: 21px;">Delivery Charge:</b> <b class="byndcvalue" style="color: rgb(204, 0, 255);font-size: 28px;font-weight: bold; margin-left: 125px;">100</b> <b style="color: navy; margin-left: 30px; font-size: 27px;font-weight: bold;">BDT</b></div>
+<div class="buynownettotal"><b style="color: green;">NET Total:</b> <b class="bynnettotalvalue" style="color: red;font-size: 29px;margin-right: 20px;"></b><b style="margin-left: 270px;">BDT </b></div>
+
+<div class="bynnameinput"><b>Your Name:</b> <input class="bynnameinputvalue" type="text"> <button class="bynnamesubmit" onclick="Bynnumberinput.style.display = 'flex';">Next</button> </div>
+<div class="bynnumberinput"><b>Your Mobile Number:</b> <input class="bynnumberinputvalue" type="tel"> <button class="bynnumbersubmit" onclick="Bynnumberalinput.style.display = 'flex';">Next</button> </div>
+<div class="bynnumberalinput"><b>Your Another Mobile <br> Number(<b style="color: red;">Optional</b>):</b> <input class="bynnumberalinputvalue" type="tel" > <button class="bynnumberalsubmit" onclick="Bynemailinput.style.display = 'flex';">Next</button> </div>
+<div class="bynemailinput"><b>Your Email <br>Account:</b> <input class="bynemailinputvalue" type="email"> <button class="bynemailsubmit" onclick="Enteraddress.style.display='flex';">Next</button> </div>
+<div class="dass">
+
+  <div class="enteraddress"><b style="font-size: 32px;">Enter Your  Address :</b> <button class="enteraddressbtn"onclick="Division.style.display = 'flex';">Next</button></div>
+  <div class="division"><b>Division</b> <input class="divisioninput" type="text"> <button class="divisionsubmit" onclick="District.style.display = 'flex';">Next</button> </div>
+  <div class="district"><b>District</b> <input class="disrictinput" type="text"> <button class="districtsubmit" onclick="Upazilla.style.display = 'flex';">Next</button> </div>
+  <div class="upazilla"><b>Upazilla/Area</b> <input class="upazillainput" type="text"> <button class="upazillasubmit" onclick="Union.style.display = 'flex';">Next</button> </div>
+  <div class="union"><b>Union/Other </b> <input class="unioninput" type="text"> <button class="unionsubmit" onclick="Village.style.display = 'flex';">Next</button> </div>
+  <div class="village"><b>Village/ Ward No. </b> <input class="villageinput" type="text"> <button class="villagesubmit" onclick="House.style.display = 'flex';">Next</button> </div>
+  <div class="house"><b>House No./
+  <br> Road No./Others</b> <input class="houseinput" type="text"> <button class="housesubmit" onclick="Pmd.style.display = 'block';">Next</button> </div>
+
+</div>
+<div class="pmd">
+
+<b>Payment Method</b> <div class="bnrcod">
+  <div class="bkash" style="display: flex;margin-top: 20px; align-items: center;"><input class="bkashinput" style="width: 30px;height:30px ; margin-right: 20px;" type="checkbox" onclick="Bignext.style.display = 'block'; Bkashinput.checked = true; Nagadinput.checked = false; Rocketinput.checked = false; Cashondinput.checked = false; Pmdoncvalue= 'Bkash';"> <b>Bkash</b> <img style="width: 40px;height: 40px;border-radius: 100%;margin-left: 15px;" src="images/bkash.png" alt=""></div>
+  <div class="nagad" style="display: flex;margin-top: 20px;align-items: center;"><input class="nagadinput" style="width: 30px;height:30px ; margin-right: 20px;" type="checkbox"  onclick="Bignext.style.display = 'block'; Bkashinput.checked =false ; Nagadinput.checked = true; Rocketinput.checked = false; Cashondinput.checked = false;Pmdoncvalue= 'Nagad';"><b>Nagad</b><img style="width: 40px;height: 40px;border-radius: 100%;margin-left: 15px;" src="images/nagad.jpeg" alt=""></div>
+  <div class="rocket" style="display: flex;margin-top: 20px;align-items: center;"><input class="rocketinput" style="width: 30px;height:30px ; margin-right: 20px;" type="checkbox" onclick="Bignext.style.display = 'block'; Bkashinput.checked = false; Nagadinput.checked = false; Rocketinput.checked = true; Cashondinput.checked = false;Pmdoncvalue= 'Rocket';"><b>Rocket</b><img style="width: 40px;height: 40px;border-radius: 100%;margin-left: 15px;" src="images/rocket.png" alt=""></div>
+  <div class="cashond" style="display: flex;margin-top: 20px;"><input class="cashondinput" style="width: 30px;height:30px ;margin-right: 20px;" type="checkbox" onclick="Bignext.style.display = 'block'; Bkashinput.checked = false; Nagadinput.checked = false; Rocketinput.checked = false; Cashondinput.checked = true;Pmdoncvalue= 'Cash on Delivery';"><b>Cash On Delivery( <b style="color: red;"> you have to pay <br> the delivey charges before</b> )</b></div>
+</div>
+
+</div>
+
+
+
+<button class="fnext" onclick="Bynnameinput.style.display = 'flex';" >Next</button>
+<button class="bignext" onclick="BNext();">Next</button>
+</div>
+
+<div class="afterbnext">
+<div class="afterbnexttop">
+  <button class="afterbnextcross" onclick="BNextcross();">x</button>
+</div>
+<div class="afterbnexttext" style="text-align: center; margin-top: 30px; font-size: 21px;">
+  <p class="aftbnpsall" style="width:300px;word-break:break-all; margin-left: 230px;"> </p>
+  <p class="aftbnq" style="margin: 5px;" > </p>
+  <p class="aftbnt"style="margin: 5px;" > </p>
+  <p class="aftbndc"style="margin: 5px;" > </p>
+  <p class="aftbnnt"style="margin: 5px;" > </p>
+  <p class="aftbnname"style="margin: 5px;" > </p>
+  <p class="aftbnnumber" style="margin: 5px;"> </p>
+  <p class="aftbnalnumber" style="margin: 5px;"> </p>
+  <p class="aftbnemail" style="margin: 5px;"> </p>
+
+  <p class="aftbnaddress" > </p>
+  <p class="aftbnpmd" > </p>
+  
+
+</div>
+
+<b style="position: absolute; margin-top: 50px; color: green;font-size: 26px; margin-left: 150px;"  >Press the <b style="color: red;">Copy</b> Button and <b style="color: blue;">Inbox</b> Us</b>
+<input type="text" class="aftbninputforcopy" style="margin-top: 100px;position: absolute;display:none;">
+<div class="aftbncibtn">
+  <Button class="aftbncopybtn" style="background-color: rgb(255, 35, 35);" onclick=" Aftbncopy();" >Copy</Button>
+  <!-- <Button class="aftbninboxbtn" style="background-color:blue;" onclick="afterinbox.style.display = 'flex';" >Inbox</Button> -->
+  <div class="afterinbox" style=" position: absolute; width: 500px;height: 200px; background-color: rgb(255, 255, 255);display: flex; margin-top: 60px;align-items: center;justify-content: space-around;">
+    </div>
+</div>
+</div>
+<div class="links" >
+  <button onclick="lcrfunc();" class="linkcross" style="background-color:navy;border: none;width: 70px;height: 40px;position: absolute;margin-left: 620px;margin-top: 5px;font-size: 29px;color: white;display: flex;justify-content: space-around;align-items: center;">x</button>
+  <b style="position: absolute;font-size: 35px; margin-top: 100px;margin-left: 145px;color: navy;"><b style="color: navy;">Send</b> your <b style="color: red;">copied</b> text via</b>
+  <div class="linkbody" style=" position: absolute;margin-left: 50px;margin-top: 200px;width: 600px;display: flex;justify-content: space-around;">
+  <a href="https://m.me/472321672622907" class="messenger"><img  src="images/messenger.jfif" alt="" style="width: 150px; border-radius: 100%;"></a><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwa.me%2Fqr%2FA5ICTB3DSF7RI1%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR01Mu98QzdMriXyXdtV1OjvpkuBh5D47onEmKoUZKrZ95S-bwd0wgoqLsM_aem_Ao0WIQfEknqvzbwXBpxo_Q&h=AT0WK1gbr5wIKflFJJBIivVO6J5OREGyfXj60hOe0ZLEHsKcG-Dyg3FJul-TMTJqyl38LaGYWxSeawREw4-JXcnC1LRNd41KHhfJFYJ9a_YZVrS7q_3IM-XUGgcaT40ScbVADz-PeetL6w_6EpZTfg" class="whatsapp"><img src="images/whatsapp.jfif" alt="" style="width: 150px; border-radius: 100%;"></a>
+    
+  </div>
+</div>
+
+<div class="addtcartanimation"><img  src="images/crt blue.jpg" alt=""></div>
+
+
+<div class="welcomenote" >
+  <img class="wimg1" style=" position: absolute; opacity: 1;width: 400px;margin-top: -20px; margin-left: 160px;" src="images/stick-figures-welcome-free-vector.jpg" alt="">
+  <button onclick="welcomenote.style.display = 'none';" style=" position: absolute;width: 100px;height: 50px; background-color: white; border:1px solid navy;font-size: 50px;margin-left: 550px;display: flex;align-items: center;justify-content: space-around;">x</button>
+  <p style=" position: absolute;margin-top: 100px;font-size: 21px; display: flex;align-items: center;"><b>স্বাগতম <b style="color: black;">C-ShirT</b>-এ! <br><br>
+
+    আপনাকে স্বাগতম জানাই <b style="color: black;">C-ShirT</b>-এ, যেখানে আপনার স্টাইল আপনার হাতে! এখানে আপনি নিজের পছন্দমতো ডিজাইন করতে পারবেন এবং আমাদের টিম আপনার জন্য সেই ডিজাইন বাস্তবায়ন করবে। আমরা বাংলাদেশ জুড়ে কাস্টম ডিজাইনের টি-শার্ট, লং স্লিভ (ফুল হাতা) এবং হুডি সরবরাহ করছি, যেখানে রয়েছে অনলাইন পেমেন্ট এবং ক্যাশ অন ডেলিভারি (<b style="color: red;">COD</b>) সুবিধা।
+    
+   
+    আজই আপনার স্টাইল তৈরি করুন, এবং আপনার পছন্দমতো ডিজাইনকে বাস্তবে পরিণত করুন! <br> <br> <br><b style="color: black;">C-ShirT</b>, আপনার ফ্যাশন, আপনার ডিজাইন! </b></p>
+    <img class="wimg2" src="images/man-2749712_1280.webp" alt="">
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
